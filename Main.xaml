@@ -1,0 +1,189 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="883,3764" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="26">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="508,3699" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="466,1254" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1032" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="358,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.google.com/search?q=aapl" />
+            <uix:NGetText DisplayName="Get Text 'USD'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NGetText_1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=aapl&amp;ei=PxHoYIifE5GfmgeLiI-oCg&amp;oq=aapl&amp;gs_lcp=Cgdnd3Mtd2l6EAMyCwgAELEDEIMBEJECMgoIABCxAxCDARBDMgsIABCxAxCDARCRAjIECAAQQzIECAAQQzIKCAAQsQMQgwEQQzIECAAQQzIKCAAQsQMQgwEQQzIECAAQQzIECAAQQzoKCC4QxwEQowIQQzoICAAQsQMQgwFKBAhBGABQxxlYxBxg7CBoAHACeACAAXmIAccDkgEDMy4ymAEAoAEBqgEHZ3dzLXdpesABAQ&amp;sclient=gws-wiz&amp;ved=0ahUKEwjIurGJ0dXxAhWRj-YKHQvEA6UQ4dUDCA4&amp;uact=5" DesignTimeRectangle="373, 586, 214, 90" ElementType="Text" FriendlyName="'143.24'" FullSelectorArgument="&lt;webctrl aaname='143.24' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' type='' /&gt;" InformativeScreenshot="b3c5185a75f6b4e741709d9e083863d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='aapl - Google Search' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="587, 626, 76, 36" ElementType="Text" FriendlyName="'USD'" FullSelectorArgument="&lt;webctrl aaname=' USD' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' USD' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' type='' check:text='USD' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAQWSURBVGhD7ZlBa9swFMf3VfMNdAmFMsjFl5rSHGYKpTSHhNEUlh7mQTxGYKQHl+ExcnFhGIovhhEIhhEIgfKf7Mi2bEtOYvXgMv/hHWL7KfJPlvTe0zu0UlILUFEtQEW1ABXVAlRUC1BRLUBFtQAVVQOgB7PTQSc2k/46Rkf6/g2weJhgdKnjlCR+1E406DdjzB5dLNfs2QqFj0bmW2ldaOc6Bncz2F6ILfOvUkMBruF+7qObPltlXRhTj3rIdTjAvJGzMeygGmMDAS5hXxP2zM66WvRVWLCmO5sMDWgn2f3IyLVNPcXiAfauJ2k7RYva1bVurt1OR4PpySE2DmDua9EmWKzknQ+fTPS5qd3/LkbIt2k8huxqhUIX1iUHklzBloxOwwD6sHrJfUPaaV5bz4SWtEkmcAW8jwYYqzATLm2IPJsFcGXDSO4PF5XrWqY1nJukTQLzmV3mVA8g1cbDJB1QgslTeXSaC/DaEY64SDEgcgqd7qDjX2Wv2gCplg/91Jd8cks7c8OmML2frml9zAJ2WVEqAHODSky6yOTVuE3E/6qx+9ToV3U1XSD4K99IDpESwOK6vGKXmRoHMFp3zLN8GBMbDZ6jUGb+00MQHgdUDWAI+zLrh1nodPMARnpZwrnVQdJnBUa/zv7Qgv0UYP3C/CRSA0h7fZ/979sAmCj04TyMMSgFtwU7MWA9ycEoA/yc/dfbAshrEyLwHMzvRzCEQAn0L54wf1UDuMZimP3P2wVY1GYJ/+cMg9x6STD6VY4eX28NLMeZigDHwshfrlcEmGpNpxi3c1/MSzmxGkC+z1dwCu41APIjUt7WK8XHVOfFF/Uxo4FwnMx/kBcGxOJDjfJLKgH8M4ee9LlnvUYcuIV7l3RWnDpJ9WxmO2spVeMhjLA4LI9jqh5UFYB8JtKbFvHVApjvkKhRmfxpL/XTS5UTOjCfsvXsuBddYn6+8xMtK7UBblyM08yoB0vwqrUARp91n3WoqtSTU+hgxKVp8z/sOi/fQo9rd76nmJlo+3uS+pGP5SJEPYD5agyRFDfqAYynMbf77YnD1r6NkcaejTpzV07Kd9rmN4S42uxCmni8rOE/jrJylmRgjgW4XZXrgY5kra8JkCpKuTgokZH3OoxhVvGNK7zv82kZOaO774a1IRLNQooV6WitPT0zMLpPqsc0uD7XCiX/LgY/xFMht+RUVKTHN3QTK/S3Q/p06spnQn2AkTYB7H0pV2o00L11sNyTdu1EQ5OpceCZSDRwV5g9y3cdHuAx1r0wsdjzwaoBZNquWMpFw5Dc6Vlcoxtg/ODAryjNS7UNabA8F55V7M5JDjs9OxhgdNoX9febDTc4LAx4FYD/s1qAimoBKqoFqKgWoKJagIpqASqqBaioFqCSgH/tG2LtNFBXJwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of UiPath.Excel.ExcelValue)("Appl Price")]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="358,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://www.google.com/search?q=msft" />
+            <uix:NGetText DisplayName="Get Text 'USD'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NGetText_2">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=msft" DesignTimeRectangle="373, 586, 212, 90" ElementType="Text" FriendlyName="'277.42'" FullSelectorArgument="&lt;webctrl aaname='277.42' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' type='' /&gt;" InformativeScreenshot="ab83293eab37f69e6f79556324aa7c59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='msft - Google Search' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="585, 626, 76, 36" ElementType="Text" FriendlyName="'USD'" FullSelectorArgument="&lt;webctrl aaname=' USD' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' USD' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' type='' check:text='USD' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAQsSURBVGhD7ZnLattAFIb7qn6D2ZhAKHijTUSoKQhTLxJKTKkCVRdRwSohJTgUmeJQEoICQVC0EQRDEBRBMIS/M/ZIGl0ja7JQqH44G81Fo29u5xy9QScpdQAl1QGUVAdQUh1ASXUAJdUBlFQHUFKNALonPfR6GzNd/rCmtmr7FMK/nsE40qC+JXG7Xq8PZf8Q+qkN5z7klSv0YEOL21ZbX1GhHug4m7sIVrx9hVoLMLwxMdxJ6lZZf2TB/csbFmkLgCkjKvS5jyqOrQS4nI9BeJ217SjrVWFNrY19nUBT+kk5MzKGveQdZCUCHIxhRP1kjfW7r6Av9ktNOXFLIbYPYGq1KDCug/IVEDgw3wtb+90MhQzFPkc2Av64VE8BnKkmgCQYz4tnp3UAve+DuFz7WbakBD26MJWoTwLjtgD3tgC50jtBg/3ACwS1DGAAexSVT3BV435gCi8P4z7JN48/FdQQIOjad78mE0q+OLnd0GKAYyzqfukaEMHuHr1BP1/lATUGSHU/wzBqSww4GYKt28LuSXKmDX/4/KmkZACmJpXA/MMfc7XvEvEsKLycDXj3g4UrP6x0JZ6VFMDMuTxPt24fQHbufFPTbszaqPPMXJmLBVyf3sxPvHodSQIM5loyDurSiGohwI2WlzpUktTNG12d7yew5g78KieaSRIg7ozkva8F4FrUH/MuZ9AP8s5t2vrQpg6CslUpC9A1k3e9KoCinlYIfBeLCwOTUTFQsmfCfeT1RUkCDH9Pkve8WoBZUaBLb4Gzj+nzkhxdIec+vuAZmPUzpQHqN9vdjy8GUFB4Zwo39xCze14QSRKgOObxr3TrRgDFGcle69USfSo196HeKXWE18E8DZtqRHGivGniamQ/Ug7gErP9aMwDWJlApxHA1Y0eD7YwdCqVBzO+WfOhmuhvTX7XjOO4KidVBqAYiQws+gVpNQKYGlBBp6WiTvIgarefz5ysbo3kPNvyQ5fn6qYdtdyx0hjgCs5xEhkNpvkvbQaQLet3fEDUHytL9aQVYHEkhGkXRW08WAOh3/PqZGasRxdG1I4UJCEaAkxlY1i/Bf5mQ4CbbZzcfs/4YX892J8UXpcNRodT5G5QrajPlVwIm2yz81COMfRsTOJ0Fp2Y84KJ2RbgqiAfmD1XuRoDZMvbPRGgMCO7UEeTJOPLMrx7u+mwjKj09q1eV8ufmYw0NfJWhXZkxNlj/UCFkkn59w8WzydUqzLSx4dQs+Ol8IbfvdKdIAGQaQV//lzIlRjZ07Gos9upwjsLWs1/Imzixqde3v+LJALcxnaGMK+r16skQC665DchF3VDUn/PNjm6w+MZFl5Far5UNPqgzvKs6F8F/09S6+9ZbYDsbx8b7xnsWx9hjYTFywD8j9UBlFQHUFIdQEl1ACXVAZRUB1BSHUBJdQClBPwDDYxikUKzou8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of UiPath.Excel.ExcelValue)("MSFT PRICE")]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="358,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://www.google.com/search?q=zm" />
+            <uix:NGetText DisplayName="Get Text 'USD'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NGetText_3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=zm" DesignTimeRectangle="373, 586, 217, 90" ElementType="Text" FriendlyName="'386.01'" FullSelectorArgument="&lt;webctrl aaname='386.01' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' type='' /&gt;" InformativeScreenshot="e5e05a669cdc00af97dcaa724adb86f7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='zm - Google Search' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="590, 626, 76, 36" ElementType="Text" FriendlyName="'USD'" FullSelectorArgument="&lt;webctrl aaname=' USD' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' USD' parentid='knowledge-finance-wholepage__entity-summary' tag='SPAN' type='' check:text='USD' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAQfSURBVGhD7ZlNa+NIEIb3r/of6GICYcAXXSLC+jAiEELMErGMA+s5xAv2HAyLclBYFAbD4sAiCIJFMBiCIAiMIbxTkltyS+qWZXUOCqsX6hC1qlN++qu69As6KakDqKgOoKI6gIrqACqqA6ioDqCiOoCKagDQw7TXQy+xKf11jI70fQ2wvJ/AujBwqqV+ZCc6jOsxFg8rrCP2boW8O863yrRTGOcmrK82lkGNjkktBRhhdTdEP3u3yvowZx55yFUbYMH6F3N4r6wTiVoIcA3nSmPv7KyvGxjdzjGf7WxyY0I/2bfHpl055CkWD3B4s++naONrA8an/P/uaZdwZB2TWgcwfDBZO5k+wfJly1rKCp+mGHJLe/iX+JfyAKc1Ao7+czA+40DqFOuGNRbUMoA+5oO03awc+VRbbwo97VObYCXgfSzARBuKVd/7De48iIayXQBfHJhp+82ycl/bK4J7nfapYfrMHnNqBDDWmounN4T9gz3n1F6AVy5C9viQkmWfnKAGxt/LXo0B0pxb/bFfysP78pJo2RKm9mxPG2IRsMeKag6QRFuElsYsGNTWHSL+N521k9GsupwtEbzKD5I6UgIYLWGl8Qhibh3AZPPmT8DUKHmOUxn70UMQHgdUCWAuZjrYXthjpvYBjPW2hvvF2C8dkdHsjHM65ylA9Mb8JFIDSHnp59T/owBMFfpw78cY6X3mI7ETE/Mn+ZGjBjCEc5H6fzSAvDYhAs+F/dWCKQSqwfhTnKupASzkph8WYFGbNfzHBUa5/VKD9b2cPb7fHngJtzDRFQGOhZm/XO8IMFNEgLiT+1e7dCdWAsjnptqU5mNeDQBW7wmV4oM5L/5QHwtKhI14eX6WFwbE4pdZeZaoANz+M858RbejBgApO79NAxJfnaR65pLSUjA8BAvLevc4pupBbQ4wfxMZPZaDagCQXZ1Yp4NZcVLL5c8GmZ9RqpzkgzUf5KdqWWvY5zs/0bbSGOAPG0Pm1+uN4Apqg40A5jo+UC/LFLqwuGua6GIOf44B168d1Ntgt/9OMj/t9/IyawSwUI3Rv4knSjOAyTLmTr8DeVjkO7C4YLTblTDdiPvNHQhJtXkF6cXjLYL/YO3LWZKBORZgHG+xHuhLYmgIkFQYodi0TwbMm0lW4Y0rx8UKr3ZGp6+kOJmIbiHFinS8156exd8q0uoxJdfneqHk38fob/FS4AHKK9K7by/FSndPp/24YoU1BxhrE8A5dOXKjBLdLy7WB65dO1FqMjNrfhOJB+4Si2f5qcMDrG80aL/ZOPRtSQ0g0/aFXbkoDcl9PUtqdCOM7134FaV5qbYhJcv2biYXbh+77yQLOF4o2Q72qgswXkHGhYXJEfG+C8D/szqAiuoAKqoDqKgOoKI6gIrqACqqA6ioDqCSgJ9gcGDbGolDIwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of UiPath.Excel.ExcelValue)("ZM Price")]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-13, -13, 2586, 1546" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="1ead30b9ce6739760ea9bccb195b5b02.png" Selector="&lt;html app='chrome.exe' title='New Tab'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="466,2315" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" WorkbookPath="Portfolio.xlsx">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Portfolio" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,2038" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:RefreshDataConnectionsX DisplayName="Refresh Excel Data Connections" sap:VirtualizedContainerService.HintSize="412,89" sap2010:WorkflowViewState.IdRef="RefreshDataConnectionsX_1" Workbook="[Portfolio]" />
+            <ueab:InsertRowsX DisplayName="Insert Rows" HasHeaders="False" sap:VirtualizedContainerService.HintSize="412,187" sap2010:WorkflowViewState.IdRef="InsertRowsX_1" InsertPosition="Specific" NbOfRows="1" Range="[Portfolio.Sheet(&quot;Sheet1&quot;)]" SpecificIndex="7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:InsertRowsX>
+            <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;A7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="412,164" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[string.Format(&quot;=TODAY()&quot;)]" />
+            <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;B7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="412,164" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;Appl Price&quot;)]" />
+            <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;C7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="412,164" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;MSFT PRICE&quot;)]" />
+            <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;D7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="412,164" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;ZM Price&quot;)]" />
+            <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;E7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="412,164" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[string.Format(&quot;=({0}-$B$2)*$C$2&quot;, Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;Appl Price&quot;))]" />
+            <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;F7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="412,164" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[string.Format(&quot;=({0}-$B$3)*$C$3&quot;, Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;MSFT PRICE&quot;))]" />
+            <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;G7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="412,164" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[string.Format(&quot;=({0}-$B$4)*$C$4&quot;, Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;ZM Price&quot;))]" />
+            <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;H7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="412,164" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[string.Format(&quot;=({0})+({1})+({2})&quot;, Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;E7&quot;), Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;F7&quot;), Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;G7&quot;))]" />
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelApplicationCard>
+  </ueab:SequenceX>
+</Activity>
